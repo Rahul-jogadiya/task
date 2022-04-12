@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
         <div className="info">
           we saw data as strategic resource in letting organization achieve
-          their top-line and bottom-line growth.
+          their front-line top-line and bottom-line growth.
         </div>
       </section>
     </main>

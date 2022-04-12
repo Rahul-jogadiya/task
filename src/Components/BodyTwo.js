@@ -1,20 +1,36 @@
 import React from "react";
-import layer117 from "./constants/Layer117.png";
+import Card from "./cards/Card";
+import ai from "./constant/AI.png";
+import layer123 from "./constant/Layer123.png";
+import layer117 from "./constant/Layer117.png";
 
 const BodyTwo = () => {
   return (
     <section className="container">
       <div className="grid grid-2">
-        <div className="information">
-          Smart solutions at the intersection of hypothesis-based analytics,
-          discovery driven AI and new data from IoT
-          <p className="para">
-            ganit has fliped the data sciencevalue chain. we don't start with a
-            techniue. for us, consumtion comes first.
-          </p>
+        <div className="card-1">
+          <Card
+            imgurl={layer123}
+            title={
+              "What gets us running is how discovery-driven AI can unlock value for our clients"
+            }
+          />
         </div>
-        <div className="diagram">
-          <img src={layer117} alt="diagram" />
+        <div className="card-2">
+          <Card
+            imgurl={layer117}
+            title={
+              "What gets us running is how discovery-driven AI can unlock value for our clients"
+            }
+          />
+        </div>
+        <div className="card-3">
+          <Card
+            imgurl={ai}
+            title={
+              "What gets us running is how discovery-driven AI can unlock value for our clients"
+            }
+          />
         </div>
       </div>
     </section>

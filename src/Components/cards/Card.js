@@ -12,7 +12,7 @@ const Card = ({ imgurl, title }) => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
           perferendis corporis commodi a facere, at officia ea amet quisquam
           doloremque ratione ex voluptates porro consequatur consectetur tenetur
-          magnam exercitationem asperiores!
+          magnam!
         </div>
       </div>
     </div>

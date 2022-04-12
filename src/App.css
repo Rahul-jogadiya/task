@@ -10,7 +10,7 @@ html {
 
 :root {
   --background: rgb(0 10 45);
-  --dark: black;
+  --dark: rgb(13, 13, 13);
   --light: white;
 }
 
