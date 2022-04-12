@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --background: rgb(0 10 45);
+  --dark: black;
+  --light: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+Header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: var(--background);
+}
+
+header .logo {
+  padding: 0.5rem;
+  margin-left: 3rem;
+}
+
+header .logo h2 {
+  font-weight: bold;
+  color: var(--light);
+  font-size: 2.5rem;
+}
+
+.menu {
+  font-size: 2.5rem;
+  margin-right: 3rem;
+  padding: 0.5rem;
+  color: var(--light);
+}
+
+/* reusable code css */
+
+a {
+  font-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 15rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* hero section css */
+
+.hero {
+  height: 85vh;
+  background-color: var(--background);
+}
+
+section .heading {
+  color: var(--light);
+  font-size: 6.5rem;
+  font-weight: 500;
+  position: absolute;
+  top: 18rem;
+  left: 20rem;
+  width: 50%;
+}
+
+section .heading span {
+  border-bottom: 2px solid var(--light);
+}
+
+section .info {
+  color: var(--light);
+  font-size: 2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 37rem;
+  left: 20rem;
+  width: 40%;
+}
+
+/* bodyTwo sectionn css */
+
+section {
+  padding: 5rem 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  background: rgb(222, 246, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.information {
+  color: var(--dark);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 3rem 3rem 3rem 10rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.para {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--dark);
+}
+
+.diagram {
+  width: 45rem;
+}
+
+.card {
+  display: grid;
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: rgb(239, 248, 252);
+}
+
+.card-image img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.subInfo {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card-1 {
+  position: absolute;
+  top: 25rem;
+  left: 30rem;
+}
+
+.card-2 {
+  position: absolute;
+  top: 55rem;
+  right: 30rem;
+}
+
+.card-3 {
+  position: absolute;
+  top: 15rem;
+  right: 28rem;
+}
+
+footer {
+  position: relative;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
 }
